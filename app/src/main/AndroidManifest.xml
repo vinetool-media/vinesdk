@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:dist="http://schemas.android.com/apk/distribution"
+          package="com.vinetool.sdk.example">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <dist:module
+            dist:instant="true"/>
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:icon="@mipmap/v"
+                 android:roundIcon="@mipmap/v"
+                 android:supportsRtl="true"
+                 android:theme="@style/AppTheme">
+
+        <activity
+                android:name=".Start"
+                android:label="@string/title_activity_start"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".BannerExample"
+                android:label="@string/title_activity_banner"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Start"/>
+        </activity>
+        <activity
+                android:name=".CatFishExample"
+                android:label="@string/title_activity_catfish"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Start"/>
+        </activity>
+        <activity
+                android:name=".InterstitialBannerExample"
+                android:label="@string/title_activity_interstitial_banner"
+                android:theme="@style/AppTheme">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Start"/>
+        </activity>
+
+        <activity
+                android:name="com.vinetool.sdk.tool.InterstitialActivity">
+        </activity>
+    </application>
+</manifest>

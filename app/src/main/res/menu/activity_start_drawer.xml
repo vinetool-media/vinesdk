@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  tools:showIn="navigation_view">
+
+	<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/banner"
+			android:icon="@drawable/ic_menu_camera"
+			android:title="Banner"/>
+		<item
+			android:id="@+id/catfish"
+			android:icon="@drawable/ic_menu_gallery"
+			android:title="Toast"/>
+
+	</group>
+
+	<item android:title="Interstitial">
+		<menu>
+			<item
+			android:id="@+id/interstitial_banner"
+			android:icon="@drawable/ic_menu_slideshow"
+			android:title="Interstitial"/>
+		</menu>
+	</item>
+
+</menu>
